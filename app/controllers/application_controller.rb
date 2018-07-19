@@ -25,6 +25,8 @@ get '/account' do
   if User.is_logged_in
     @user = User.find(session[:user_id])
     erb :account
+  else
+    erb :error
 end
 
 get '/logout' do
