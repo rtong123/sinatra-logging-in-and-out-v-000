@@ -27,6 +27,7 @@ get '/account' do
     erb :account
   else
     erb :error
+  end
 end
 
 get '/logout' do
