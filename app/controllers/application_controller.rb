@@ -27,7 +27,7 @@ erb :account
 end
 
 get '/logout' do
-  session[:user_id].clear
+  session.clear
 
 end
 
